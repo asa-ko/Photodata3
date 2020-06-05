@@ -24,9 +24,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       // Realm.init(this)
-       // val confing=RealmConfiguration.Builder().build()
-       // Realm.setDefaultConfiguration(confing)
         val item:Item?=read()
 
         if(item!=null) {
@@ -37,27 +34,12 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             selectPhoto()
         }
-
-
-
-     /*   saveButton.setOnClickListener {
-            //ContentResolver
-
-            /*val photouri: Item? =
-         //   val dataText: Context= editText.context
-            save(photo)*/
-
-        }
-
-      */
     }
 
     override fun onDestroy() {
         super.onDestroy()
         realm.close()
     }
-
-
 
 
    fun save(uri: String){
@@ -118,9 +100,7 @@ class MainActivity : AppCompatActivity() {
                         val image = BitmapFactory.decodeStream(inputStream)
                         val imageView = findViewById<ImageView>(R.id.imageView)
                         imageView.setImageBitmap(image)
-
-                       //val  stringUri :String=uri.toString()
-                       //save(stringUri)
+                        
                     }
 
                 } catch (e: Exception) {
