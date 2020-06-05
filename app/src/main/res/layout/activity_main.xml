@@ -9,51 +9,29 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="420dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginEnd="46dp"
+        android:layout_width="311dp"
+        android:layout_height="402dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="35dp"
         android:background="#80FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="30dp"
-        android:text="選択"
-        app:layout_constraintBottom_toTopOf="@+id/saveButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="75dp"
-        android:text="保存"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/background_rounded"
+        android:text="+"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="日付"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
